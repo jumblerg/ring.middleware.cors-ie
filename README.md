@@ -1,6 +1,6 @@
 # ring.middleware.cors-ie [![Build Status][1]][2]
 
-ring middleware that extends cross-origin resource sharing (cors) capabilities to ie 8, 9, and 10 via [eli grey's pmxdr library][3].
+ring middleware that extends cross-origin resource sharing (cors) capabilities to internet explorers 8, 9, and 10 via [eli grey's pmxdr library][3].
 
 ## installation
 
@@ -8,7 +8,7 @@ ring middleware that extends cross-origin resource sharing (cors) capabilities t
 
 ## application
 
-thread cors-ie onto the ring stack before ring.middleware.cors in order to make use of [pmxdr-client.js][6].  the allowed origins should be passed to the [jumblerg/ring.middleware.cors][7] wrapper as described in that project's documentation.
+thread the cors-ie middleware, along with ring.middleware.cors, onto the ring stack in order to add server support for [pmxdr-client.js][6]. the allowed origins should be passed to the [jumblerg/ring.middleware.cors][7] wrapper as described in that project's documentation.  configure pmxdr-client.js to request pmxdr-host.js from this middleware at the uri /fefdb2c0-eeb4-4914-9be2-97c4df709ee8.
 
 ```clojure
 (require '[ring.middleware.cors    :refer [wrap-cors]])
@@ -28,7 +28,7 @@ distributed with clojure under the eclipse public license
 [1]: https://travis-ci.org/jumblerg/ring.middleware.cors-ie.png?branch=master
 [2]: https://travis-ci.org/jumblerg/ring.middleware.cors-ie
 [3]: https://github.com/eligrey/pmxdr
-[4]: https://clojars.org/jumblerg/ring.middleware.cors/latest-version.svg?bustcache=1.0.0
+[4]: https://clojars.org/jumblerg/ring.middleware.cors-ie/latest-version.svg?bustcache=1.0.0
 [5]: https://clojars.org/jumblerg/ring.middleware.cors-ie
 [6]: https://github.com/eligrey/pmxdr/blob/master/pmxdr-client.js
-[7]: https://clojars.org/jumblerg/ring.middleware.cors
+[7]: https://github.com/jumblerg/ring.middleware.cors
