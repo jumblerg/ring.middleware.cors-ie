@@ -8,7 +8,7 @@ ring middleware that extends cross-origin resource sharing (cors) capabilities t
 
 ## application
 
-thread the cors-ie middleware, along with ring.middleware.cors, onto the ring stack in order to add server support for [pmxdr-client.js][6]. the allowed origins should be passed to the [jumblerg/ring.middleware.cors][7] wrapper as described in that project's documentation.  configure pmxdr-client.js to request pmxdr-host.js from this middleware at the uri /fefdb2c0-eeb4-4914-9be2-97c4df709ee8.
+thread the cors-ie middleware, along with ring.middleware.cors, onto the ring stack in order to serve the html required by [pmxdr-client.js][6]. the allowed origins should be passed to the [ring.middleware.cors][7] wrapper as described in that project's documentation.  configure pmxdr-client.js to request the pmxdr-host at `/fefdb2c0-eeb4-4914-9be2-97c4df709ee8.html`.
 
 ```clojure
 (require '[ring.middleware.cors    :refer [wrap-cors]])
