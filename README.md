@@ -28,7 +28,7 @@ distributed with clojure under the eclipse public license
 [1]: https://travis-ci.org/jumblerg/ring.middleware.cors-ie.png?branch=master
 [2]: https://travis-ci.org/jumblerg/ring.middleware.cors-ie
 [3]: https://github.com/eligrey/pmxdr
-[4]: https://clojars.org/jumblerg/ring.middleware.cors-ie/latest-version.svg?bustcache=1.0.0-1
+[4]: https://clojars.org/jumblerg/ring.middleware.cors-ie/latest-version.svg?bustcache=1.0.1
 [5]: https://clojars.org/jumblerg/ring.middleware.cors-ie
 [6]: https://github.com/eligrey/pmxdr/blob/master/pmxdr-client.js
 [7]: https://github.com/jumblerg/ring.middleware.cors

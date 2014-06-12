@@ -1,5 +1,5 @@
-{:main  [:project      jumblerg/ring.middleware.pmxdr-host
-         :version      "1.0.0"
+{:main  [:project      jumblerg/ring.middleware.cors-ie
+         :version      "1.0.1"
          :url          "https://github.com/jumblerg/ring.middleware.pmxdr-host"
          :description  "ring middleware that extends cross-origin resource sharing (cors) semantics to the usual microsoft products."
          :license      {:name "Eclipse Public License"
